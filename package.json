@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/msimp24/ecommerce-web#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "path": "^0.12.7"
   }
 }
