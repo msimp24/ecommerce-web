@@ -10,13 +10,13 @@
     <title>Ecommerce Website
     </title>
 </head>
-<body>
+<body class="color">
 
     <div class="top-header">
         <h1>Mark's Bookstore</h1>
     </div>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
             <i class="bi bi-book-half"></i>
@@ -26,73 +26,43 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-lg-0">
-              <li class="nav-item">
-                <a id="home-button"class="nav-link active" aria-current="page" href="/home">Home</a>
+             
+              <li>
+                <div id="fiction-btn" class="nav-button">Fiction</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/fiction">Fiction</a>
+              <li>
+                <div id="non-fiction-btn" class="nav-button">Non-Fiction</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/non-fiction">Non-Fiction</a>
+              <li>
+                <div id="bio-btn" class="nav-button">Biographies</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/biographies">Biographies</a>
+              <li>
+                <div id="sci-btn" class="nav-button">Sci-Fi</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/kids">Kids</a>
+              <li>
+                <div id="kids-btn" class="nav-button">Kids</div>
               </li>
+
             </ul>
             <form class="d-flex">
               <input class="form-control me-2 search-width" type="search" placeholder="Search book" aria-label="Search">
               <button class="btn btn-outline-secondary" type="submit">Search</button>
+              <div class="shopping-basket">
+                <i class="bi bi-cart4">Cart</i>
+              </div>
             </form>
           </div>
         </div>
       </nav>
     
-      <div class="container d-flex flex-wrap mt-4" id="books-container">
+      <div class="container-md d-flex flex-wrap mt-4" id="books-container">
 
-          <div class="book-card" id="test">
-            <h5>12 Rules For Life</h5>
-            <img src="" alt="" class="book">
-            <h5 id="book-price">$12.99</h5>
-          </div>
-          <div class="book-card">
-            <h5>12 Rules For Life</h5>
-            <img src="" alt="" class="book">
-            <h5 id="book-price">$12.99</h5>
-          </div>
-          <div class="book-card">
-            <h5>12 Rules For Life</h5>
-            <img src="" alt="" class="book">
-            <h5 id="book-price">$12.99</h5>
-          </div>
-          <div class="book-card">
-            <h5>12 Rules For Life</h5>
-            <img src="" alt="" class="book">
-            <h5 id="book-price">$12.99</h5>
-          </div>
-          <div class="book-card">
-            <h5>12 Rules For Life</h5>
-            <img src="" alt="" class="book">
-            <h5 id="book-price">$12.99</h5>
-          </div>
-          <div class="book-card">
-            <h5>12 Rules For Life</h5>
-            <img src="" alt="" class="book">
-            <h5 id="book-price">$12.99</h5>
-          </div>
-          <div class="book-card">
-            <h5>12 Rules For Life</h5>
-            <img src="" alt="" class="book">
-            <h5 id="book-price">$12.99</h5>
-          </div>
-          <div class="book-card">
-            <h5>12 Rules For Life</h5>
-            <img src="" alt="" class="book">
-            <h5 id="book-price">$12.99</h5>
-          </div>
-          
+      </div>
+
+      <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="container">
+          <h1 class="display-4 text-white text-center">Thanks for shopping with us!</h1>
+        </div>
       </div>
 
 </body>
