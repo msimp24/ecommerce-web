@@ -1,4 +1,3 @@
-window.onload = function(){
 
 const booksContainer = document.querySelector("#books-container");
 const fictionBtn = document.querySelector('#fiction-btn');
@@ -6,6 +5,23 @@ const nonFictionBtn = document.querySelector("#non-fiction-btn");
 const bioBtn = document.querySelector("#bio-btn");
 const sciFiButton = document.querySelector("#sci-btn");
 const kidsButton = document.querySelector('#kids-btn');
+const homeBtn = document.querySelector('#home-btn');
+
+
+window.onload = async function(){
+    booksContainer.innerHTML = "";
+    const options = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+      };
+      const response = await fetch('/home', options);
+      const booksArray = await response.json();
+      booksArray.forEach(createBookCard);
+
+}
+
 
 
 fictionBtn.addEventListener('click', async ()=>{
@@ -83,9 +99,6 @@ kidsButton.addEventListener('click', async ()=>{
 })
 
 
-
-
-
 function createBookCard(book){
     var bookCard = document.createElement('div');
     var nameHeader = document.createElement('p');
@@ -96,6 +109,8 @@ function createBookCard(book){
 
     cartButton.classList.add('add-cart');
     cartButton.textContent = "Add to Cart";
+    cartButton.setAttribute("id", book.ISBN);
+    cartButton.addEventListener('click', clickedBook)
 
     bookCard.classList.add('book-card');
     bookCard.setAttribute("id", book.ISBN);
@@ -116,4 +131,21 @@ function createBookCard(book){
 
 }
 
+ function clickedBook(){
+    var ISBN = this.id;
+    const data = {ISBN};
+    console.log(data)
+    const options = {
+        method: 'POST', 
+        headers:{
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }
+    const response = fetch('/cart', options);
+
+}
+
+function viewBookDescription(){
+    //window.location.href = "/book-description"
 }

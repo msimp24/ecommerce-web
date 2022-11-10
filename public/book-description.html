@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">
+          <a class="navbar-brand" id="home-btn" href="/">
             <i class="bi bi-book-half"></i>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,21 +26,23 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-lg-0">
-              <li class="nav-item">
-                <a id="home-button"class="nav-link" aria-current="page" href="/home">Home</a>
+             
+              <li>
+                <div id="fiction-btn" class="nav-button">Fiction</div>
               </li>
-              <li class="nav-item">
-                <a id="fiction-button"class="nav-link active" href="/fiction">Fiction</a>
+              <li>
+                <div id="non-fiction-btn" class="nav-button">Non-Fiction</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/non-fiction">Non-Fiction</a>
+              <li>
+                <div id="bio-btn" class="nav-button">Biographies</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/biographies">Biographies</a>
+              <li>
+                <div id="sci-btn" class="nav-button">Sci-Fi</div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/kids">Kids</a>
+              <li>
+                <div id="kids-btn" class="nav-button">Kids</div>
               </li>
+
             </ul>
             <form class="d-flex">
               <input class="form-control me-2 search-width" type="search" placeholder="Search book" aria-label="Search">
@@ -53,7 +55,9 @@
         </div>
       </nav>
     
-      
+      <div class="container-md d-flex flex-wrap mt-4" id="books-container">
+
+      </div>
 
       <div class="jumbotron jumbotron-fluid bg-dark">
         <div class="container">

@@ -124,3 +124,15 @@ img.book{
       .navbar-expand-lg .navbar-toggler {
         display: none !important;
       }}
+
+      .cart-dropdown{
+        position:absolute;
+        top:0%;
+        right: 0px;
+        height:100%;
+        width:50%;
+        background-color: white;
+      }
+      .cart-item{
+        
+      }

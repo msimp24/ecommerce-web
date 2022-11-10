@@ -1,0 +1,14 @@
+To Do:
+
+- On clicked book, bring user to a book description page. This will give the user to option to learn more on the book and decide if they want to add the
+book to their cart.
+
+- Create drop down for cart when clicked on. This will display the user's current shopping cart and allow them to edit anything in the cart if they wanted 
+to change any of their options.
+
+- Create drop down for nav bar when webpage is shrunk in size.
+
+- Create form for user to enter personal data as well as shipping/billing data.
+
+- MAYBE create payment with node js (not sure if I can do this as a single page web application but will see)
+
